@@ -1,0 +1,324 @@
+body{
+    font-family: "Montserrat", sans-serif;
+} /*Importante utilizar fuente externa especifica de fuente de dato y tipologia de letra */
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display:block;
+    margin:0 0 20px;
+    padding:10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background:red;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s all;
+    cursor: pointer;
+
+}
+
+.enviar:hover{
+    background: darkgreen;
+    transform: scale(1.2) rotate(5deg);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 2px solid #000000 ;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+/* Aqui inicia CSS para nuestra pagina web home 
+del archivo index.html */
+
+/*
+Ojo recordando el llamado a clase es con .nombreDeLaClase
+*/
+.banner{
+    width: 100%; /* Aqui agrandamos la imagen principal para que se proyecte 100%*/
+}
+
+/* <p>Párrafo de Ejemplo</p>*//* este parrafo se tiene que pegar depues de la apertura de la etiqueta main para hacer lo siguinete de selectores avanzados
+
+main>p{/* solo me está aplicando a los hijos, a los p que son hijos directos del main, no a su jerarquía subsecuente.
+  background: red;  
+} */
+
+/*img + p{/*Aqui le estoy diciendo seleccioneme el primer parrafo que va despues de una imagen por eso es importnate ver bien el archivo HTML para revisar la posicion del codigo y utilizar el recurso que mejor describa la posicion del elemento que quiero modificar visulamente desde css 
+    background: yellow;
+}
+
+img ~p{/*aqui les estoy indicando que me ponga de color verde todos los parrafos que sigan despues de una imagen*/
+   /* background: green;*//*calaramente borra lo que se hizo antes
+}*/
+
+/*
+.principal p:not(#mision){/*Aqui le estamos diciendo aplicame naranja a todos los parrafos que vienen de color verde no olvidar que el aterior codigo pidio colocar en verde todo los parrafos que estan despues de una imagen:vamos a llamar al nuestro bloque principal con un selector de clase seguido o concatenado con una etiqueta p y le decimos que aplique a todos los parrafon menos a la mision que tiene una id=misioncon esto lo identificamos y se mantiene con el anterior estilo que se le realizo 
+    background: orange;
+}*/
+
+.principal{
+    padding: 3em 0; /*el espaciamiento internoel mismo que se colca en todos */
+    background: #fefefe;/*configuramos el color del fondo con un color casi blanco*/
+    width: 940px; 
+    margin:0 auto;
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size:2em;  /* Aqui cambiamos el tamanio de la fuente utilizando 2em que es utilizar dos veces el tamanio padron de la fuente que esta utilizando el navegarod */
+    margin: 0 0 1em;/*Aqui adicionamos un marge con 0 top , 0 right y 1em en bottom
+    que 1em = una vez el tamanio de la margen padron*/
+    clear:left;/* borrar cuaquier configuración que venga de left*/
+    /*color:rgba(0,0,0,0.3); /*es igual que #000000 yopacidad de 30%*/
+    /*con rgba una variación estamos diciendo que coloque el color pero que el cuarto parametro que es la opacidad */
+    /*text-shadow: 2px 2px 2px black;/* para hacer el sombreado de textos en este caso los titulos utilizamos text-shadow:*/
+}
+
+/* Aqui algunas aplicaciones de Pseudo-elementos %%%%%%%%%%%%%%%%*/
+
+/*
+.titulo-principal:first-letter{/* COn este comando podemos hacer que la primer letra de cada titulo se ponga en Negrilla
+    font-weight: bold;
+}
+/*
+.titulo-principal:before{/*Aqui le digo que me coloque antes de cada titulo un [
+    content: "[" ;
+}
+/*
+.titulo-principal:after{/*Aqui le digo que me coloque despues de cada titulo un ]
+    content: "]" ;
+}
+/*
+p:first-line{/*con esto podemos cambiar a italic las primeras lineas de nuestros parrafos
+    font-style: italic;
+}*/
+
+/*Hasta  Aqui algunas aplicaciones de Pseudo-elementos %%%%%%%%%%%%%%%%*/
+
+
+.principal p{
+    margin: 0 0 1em; /* Aqui generamos el espacio entre parrafos*/
+
+}
+
+.principal strong{
+    font-weight:bold;/*establece qué tan gruesos o finos deben mostrarse los caracteres del texto.  */
+}
+
+.principal em{
+    font-style: italic;/*Estilo de fuente italico*/
+}
+
+.utensilios{ /*Imagen de los utensilios del barbero */
+    width:calc(40% -(26px*4)); /*no ovlidar que el with estandar que uitlizamos en web es 940px que es el 70% de area de la pagina es este caso es algo pequenio */
+    float: left;
+    margin: 0 20px 20px 0;/*Margen de 20px en rigth y bottom */
+}
+
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(#fefefe, #888888) /*con linear-gradient podemos pasar por todos los colores que e pongamos*/
+    /*background:radial-gradient(orange 50%, blue,red,black) Esta forma me deja el gradiente circular */
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+    background: ;
+}
+
+.diferenciales{
+    padding: 3em 0; /*0se hace la continuación del espaciamiento interno de 3em */
+    background: #888888; /*color plomo claro*/
+    /*box-shadow:inset 0 0 30px red;/* Aquie por ejemplo podemos colocar para todo el bloque de diferenciales un marco que es una sobra iterna hacia dentro*/
+}
+
+.contenido-diferenciales{
+    width: 640px;/*Ajustar el ancho de 640pixeles*/
+    margin: 0 auto;/*Este es el margen de todo el contenido*/
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5; /* Es lo mismo que colocar 1.5em */
+    font-style: italic; /*colocamos el estilo italic para todos items de la lista*/
+}
+
+.items:before{/*Con este pseudo-elemento colocamos una estrella el codigo salio de https://symbl.cc/es/2605/ y el Código CSS es =	\2605*/ 
+    content:"\2605";/*no olvidar "colocar entre comillas el codigo"*/ 
+}
+
+.items:first-child{/*Imporntante forma de llamar al primer elemento de la lista*/
+    /*tambien lo prodia hacer con el last-child para el ultimo elemento*/
+    /*.items:nth-child(3) podemos poner en negrilla el item 3 (numero de item)*/
+    /*.items:nth-child(2n) todo los items pares*/
+    font-weight: bold;/*Le estoy diciendo que lo pinte de negro o en negrilla*/
+}
+
+.imagen-diferenciales{
+    width: 60%; /* esa imagen quiero que ocupe un poco mas de la mitad*/
+    opacity: 80%; /*0%;Significa que no deje pasar nada de luz*/
+    transition: 400ms;/*Vamos a colocar un tiempo*/
+    box-shadow:10px 10px 30px 15px #000000;/*Los parametros se interpretan asi; 10px ubicación de la sombra en el eje horizontal 
+    10px ubicación de la sombra en el eje vertical  y por ultimo el color podemos colocar un parametro antes del color que es la difumicidad cuanto va de solido a transparente un degradado del color Otro parametro que puedo colocar antes del color es la expansion se define en pixeles en este caso coloco 25pixeles asi:  box-shadow:10px -10px 40px 25px #000000;    */
+}
+
+.imagen-diferenciales:hover{/*si quiero que tenga el efecto cuando pada el mouse tenemos que usar :hover*/
+    opacity: 40%;/* 0% Significa que no deje pasar nada de luz*/
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja,.principal, .mapa-contenido, .contenido-diferenciales,.video{
+        width: auto;
+    }  
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }   
+}/*Las media queris lo que hacen es permitirnos trabajar con excepciones o, dada una condición, aplicar algo diferente La forma de definirlas es @ y colocamos media asi @media screem (proque vamos atrabajar con la pantalla seguido de un and ( la medida de la pantalla)  */ 

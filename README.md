@@ -8,7 +8,7 @@
 
 -Estado del proyecto: pendiente modificar las paginas con un buen comportamiento responsivo usando  Meta etiqueta de Viewport Media Queries revisar el comportamiento en el simulardor o consola del programador.
 
-Inciamos:  Abrir Index.html y Style.css desde carpeta que contine todo los archivos de la pagina : 1768-HTML5 y CSS3 parte3-aula0
+```Inciamos```:  Abrir Index.html y Style.css desde carpeta que contine todo los archivos de la pagina : 1768-HTML5 y CSS3 parte3-aula0
 En Html se relizo lo siguiente para que esta relacionado al comportamiento responsivo:
 
 se incluye el  <meta name="viewport" content="width=device-width">  dentro del head:
@@ -20,7 +20,7 @@ se incluye el  <meta name="viewport" content="width=device-width">  dentro del h
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">     
     
-    </head>
+</head>
 
 Y en css se hace uso de  media queris:
 @media screen and (max-width:480px) {
@@ -37,3 +37,6 @@ Y en css se hace uso de  media queris:
         width: 100%;
     }   
 }/*Las media queris lo que hacen es permitirnos trabajar con excepciones o, dada una condición, aplicar algo diferente La forma de definirlas es @ y colocamos media asi @media screem (proque vamos atrabajar con la pantalla seguido de un and ( la medida de la pantalla)  */ 
+
+
+

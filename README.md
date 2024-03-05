@@ -39,6 +39,7 @@ Y en css se hace uso de  media queris:
 }/*Las media queris lo que hacen es permitirnos trabajar con excepciones o, dada una condición, aplicar algo diferente La forma de definirlas es @ y colocamos media asi @media screem (proque vamos atrabajar con la pantalla seguido de un and ( la medida de la pantalla)  */ 
 
 -**Repertir lo mismos en las paginas Productos y contacto**
+La idea es hacer todo desde GitHub z actualiyar desde el pc con git
 
 
 
